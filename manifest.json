@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Pagy Blocker",
+  "version": "0.1.1",
+  "description": "Pagy - Ad Blocker mit WASM",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+    // "declarativeNetRequestFeedback" // Optional, falls benötigt
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "wasm/filter_parser.wasm"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+      // Kommentar: "<all_urls>" ist oft nötig, damit der JS-Loader (filter_parser.js)
+      // die WASM-Datei per fetch laden kann. Sicherer wäre ggf.
+      // "matches": ["chrome-extension://DeineExtensionIDHier/*"], aber das kann
+      // manchmal zu Problemen führen, je nachdem WIE die Datei geladen wird.
+    }
+  ]
+}

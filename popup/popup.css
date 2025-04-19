@@ -1,0 +1,50 @@
+/* popup/popup.css */
+body {
+    font-family: sans-serif;
+    width: 250px; /* Breite des Popups */
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#stats p {
+    margin: 8px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#stats span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.note {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 10px;
+}

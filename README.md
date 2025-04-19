@@ -1,4 +1,4 @@
-# Performant MV3 Ad Blocker Extension
+# zero-tracking v2
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) A Chrome browser extension demonstrating an ad blocker built with Manifest V3, focusing on performance using the Declarative Net Request API.
 

@@ -38,8 +38,8 @@ This extension provides basic ad and tracker blocking functionality by parsing a
 
 1.  **Clone or Download:** Get a copy of this repository.
     ```bash
-    git clone https://github.com/zerox80/adblocker-extension.git
-    cd adblocker-extension
+    git clone https://github.com/zerox80/zero-trackingv2.git
+    cd zero-trackingv2
     ```
 2.  **Open Chrome/Chromium Extensions:** Navigate to `chrome://extensions` in your browser.
 3.  **Enable Developer Mode:** Toggle the "Developer mode" switch, usually in the top-right corner.

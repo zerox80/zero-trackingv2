@@ -1,6 +1,6 @@
 // js/rule_parser.js
 
-export async function parseFilterList(filterListText) {
+/*export async function parseFilterList(filterListText) {
   const lines = filterListText.split(/\r?\n/);
   const rules = [];
   let ruleId = 1;
@@ -54,6 +54,7 @@ export async function parseFilterList(filterListText) {
 
   return rules;
 }
+*/
 
 export async function updateRules(rules) {
 const DNR_MAX_RULES = chrome.declarativeNetRequest.MAX_NUMBER_OF_DYNAMIC_AND_SESSION_RULES || 5000;

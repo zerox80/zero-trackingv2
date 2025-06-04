@@ -14,9 +14,6 @@
 ||www.googletagmanager.com^
 ||googletagservices.com^
 ||www.googletagservices.com^
-||connect.facebook.net^
-||www.facebook.com^
-||static.xx.fbcdn.net^
 ||s.ytimg.com^
 ||ads.youtube.com^
 ||ad.yieldmanager.com^
